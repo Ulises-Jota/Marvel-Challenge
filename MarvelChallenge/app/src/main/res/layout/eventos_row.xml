@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/foto_evento"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:layout_constraintLeft_toLeftOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/marvel_logo"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:id="@+id/textos"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:layout_constraintLeft_toRightOf="@id/foto_evento"
+                app:layout_constraintBottom_toBottomOf="@id/constraint"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:id="@+id/nombre_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_evento"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/fecha_inicio_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha_inicio_evento"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fecha_cierre_evento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha_cierre_evento"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ic_expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:src="@drawable/ic_expand_more"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:layout_constraintLeft_toRightOf="@id/textos"
+                app:layout_constraintBottom_toBottomOf="@id/constraint"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="RtlHardcoded" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lista_eventos_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="5dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:animateLayoutChanges="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/subtitulo_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_evento"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_margin="4dp"
+                android:padding="8dp" />
+
+            <ListView
+                android:id="@+id/lista_eventos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:divider="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

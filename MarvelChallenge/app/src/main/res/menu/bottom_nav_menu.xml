@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/personajesFragment"
+        android:icon="@drawable/personaje_selector"
+        android:title="@string/personajes"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/eventosFragment"
+        android:icon="@drawable/evento_selector"
+        android:title="@string/eventos"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+</menu>
