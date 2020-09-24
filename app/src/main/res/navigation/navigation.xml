@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/personajesFragment">
+
+    <fragment
+        android:id="@+id/personajesFragment"
+        android:name="com.example.marvelchallenge.ui.PersonajesFragment"
+        tools:layout="@layout/fragment_personajes">
+        <action
+            android:id="@+id/action_personajesFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventosFragment"
+        android:name="com.example.marvelchallenge.ui.EventosFragment"
+        tools:layout="@layout/fragment_eventos" />
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.marvelchallenge.ui.DetalleFragment"
+        tools:layout="@layout/fragment_detalle">
+        <action
+            android:id="@+id/action_detalleFragment_to_personajesFragment"
+            app:destination="@id/personajesFragment"
+            app:popUpTo="@id/personajesFragment" />
+    </fragment>
+</navigation>

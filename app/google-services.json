@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "784481987895",
+    "firebase_url": "https://fir-prueba-17a74.firebaseio.com",
+    "project_id": "fir-prueba-17a74",
+    "storage_bucket": "fir-prueba-17a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784481987895:android:33098b34db1318f431feb2",
+        "android_client_info": {
+          "package_name": "com.example.marvelchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784481987895-h9llp653ind15lna82ibtktdh4i87d3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNhzpRHnOGV--togw-eD6wO_zNCfKrKPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784481987895-h9llp653ind15lna82ibtktdh4i87d3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

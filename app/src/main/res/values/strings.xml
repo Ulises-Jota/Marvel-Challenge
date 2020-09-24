@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Marvel Challenge</string>
+
+    <string name="personajes">Personajes</string>
+    <string name="eventos">Eventos</string>
+
+    // Diseño eventos_row y expandable_row
+    <string name="nombre_evento">Civil War</string>
+    <string name="fecha_inicio_evento">9 de Agosto 2020</string>
+    <string name="fecha_cierre_evento">10 de Agosto 2020</string>
+    <string name="subtitulo_evento">COMICS A DISCUTIR</string>
+    <string name="detalle_evento">Iron Man (1968) #55</string>
+    <string name="anio_evento">1973</string>
+
+    // Diseño fragment_detalle y personajes_row
+    <string name="subtitle_detalle">COMICS EN LOS QUE APARECE</string>
+    <string name="character_bio">Using the power of the Infinity Stones, Thanos believes he can ultimately save the
+                                universe by wiping out half of its population</string>
+    <string name="comic_donde_aparece">Iron Man (1968) #55</string>
+    <string name="anio_aparicion_comic">1973</string>
+    <string name="nombre_personaje">THANOS</string>
+
+    // Facebook SDK
+    <string name="facebook_application_id" translatable="false">606777503577993</string>
+    <string name="fb_login_protocol_scheme">fb606777503577993</string>
+
+</resources>
